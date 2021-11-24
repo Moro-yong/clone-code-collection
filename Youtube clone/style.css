@@ -1,0 +1,504 @@
+:root {
+    /* color */
+    --lightgary: #AAAAAA;
+    --gary: #202020;
+    --darkgray: #181818;
+
+    /* size */
+    --padding: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+button {
+    border-style: none;
+    background: none;
+}
+
+
+/* HEADER - left */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;                        /* 포지션과 'top:0'으로 뷰포트 상단에 네비게이션 고정 */
+    top: 0;
+    background: #212121;
+    color: var(--gary);
+    font-size: 22px;
+    padding: 8px var(--padding) 8px var(--padding);
+    z-index: 1;
+}
+
+header .header-left .fa-youtube {
+    color: red;
+    padding-left: 10px
+}
+
+header .header-left sup {
+    font-size: 10px;
+    padding-left: 4px;
+    color: var(--lightgary);
+}
+
+
+/* HEADER - center */
+
+header .search {
+    display: flex;
+    position: relative;              /* 키보드 버튼 위치를 위한 포지션 값 지정 */
+}
+
+header .search input {
+    width: 22vw;                    /* 반응형을 위해 vw사용 */
+    height: 40px;
+    background: #121212;
+    border: 1px solid #313131;
+    border-radius: 3px 0 0 3px;
+    padding-left: 10px;             /* 패딩 값으로 input내부의 placeholder 좌측 여백추가 */
+}
+
+header .search input:focus {        
+    outline: none;                  /* 검색창 클릭 시 테두리 스타일 제거 */
+}
+
+header .search .keyboard {
+    position: absolute;             /* .search의 포지션 값에 대응하는 포지션으로 키보드 아이콘(버튼)을 input내부로 이동 */
+    right: 120px;
+    top: 10px;
+    font-size: 18px;
+}
+
+header .search .fa-keyboard {
+    color: var(--lightgary);
+}
+
+header .search .search-icon {
+    height: 40px;
+    width: 60px;
+    border-radius: 0 3px 3px 0;
+    background: #313131;
+}
+
+header .search .fa-search {
+    font-size: 16px;
+}
+
+header .search .microphone {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #121212;
+    margin-left: 10px;
+}
+
+header .search .microphone {
+    font-size: 16px;
+}
+
+/* HEADER - right */
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .icon {
+    margin: 0 14px;
+    font-size: 20px;
+}
+
+.header-right i {
+    font-size: 20px;
+}
+
+.header-right .search-icon2 {
+    display: none;
+}
+
+header .myprofile {
+    display: flex;
+    align-items: center;
+}
+
+header .myprofile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    background: var(--darkgray);            /* 유튜브 다크모드 배경색상 */
+}
+
+/* MAIN - VIDEO */
+main .videoandinfo {
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+main video {
+    width: 100%;
+    /* height: 30%; */
+    margin: 24px 24px 0 0;
+}
+
+/* MAIN - info */
+
+/* main .video-info {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+} */
+
+
+main .video-info .title-meta {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    /* width: 70%; */
+}
+
+main .video-info .title-meta .title {
+    font-size: 18px;
+}
+
+main .video-info .title-meta .video-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+main .video-info .title-meta .views {
+    display: inline-block;    
+    font-size: 14px;
+    color: #AAAAAA;
+}
+
+main .video-info .title-meta .like{
+    position: relative;
+}
+
+main .video-info .title-meta .like i {
+    margin: 0 10px;
+}
+
+main .video-info .title-meta .like-bar{             /* 좋아요, 싫어요 버튼 하단 흰색 bar용 css인데 이것보다 좋은 방법이 있을까요? */
+    border: 1px solid white;
+    width: 114px;
+    position: absolute;
+    top: 38px;
+    left: 6px;
+}
+
+main .profile img {
+    width: 40px;
+    height: 40px;
+}
+
+/* subscribe-info */
+
+.subscribe-info {
+    font-size: 14px;
+    /* width: 70%; */
+}
+
+.subscribe-info .profile-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.subscribe-info .profile-meta .profile-container {
+    display: flex;
+}
+
+.subscribe-info .profile-container img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.subscribe-info .profile-container .people {
+    font-size: 12px;
+    color: #AAAAAA;
+    padding-top: 2px;
+}
+
+.subscribe-info .subscribe button{
+    background: #313131;
+    width: 76px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 0 10px
+}
+
+.subscribe-info .subscribe i {
+    font-size: 20px;
+}
+
+.subscribe-info .comment {
+    padding: 0 0 20px 50px;
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+/* 더보기 클릭 전 */
+.subscribe-info .infoTitle {
+    /* font-size: 14px; */
+}
+/* 더보기 클릭 후*/
+.subscribe-info .infoTitle.clamp {
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;             
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* 더보기 클릭 전 (버튼)*/
+.subscribe-info .infoMore {
+    /* content: "더보기"; */
+}
+
+/* 더보기 클릭 후 (버튼)*/
+.subscribe-info .infoMore.clicked {
+    /* content: "간략히"; */
+}
+
+.subscribe-info .comment > div {
+    max-width: 614px;
+}
+
+.subscribe-info .comment button {
+    margin-top: 10px;
+    color: #AAAAAA;
+}
+
+.subscribe-info .my-comment {
+    display: flex;
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+}   
+
+.subscribe-info .my-comment div {
+    margin-right: 26px;
+}
+
+.subscribe-info .my-comment i {
+    margin-right: 6px;
+}
+
+.subscribe-info .comment-write {
+    display: flex;
+    align-items: top;
+}
+
+.subscribe-info .comment-write .my-profile img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.subscribe-info .comment-input {
+    width: 100%;
+}
+
+.subscribe-info .comment-write input {                 
+    width: 100%;
+    height: 30px;
+    border-style: none;
+    border-bottom: 1px solid #717171;
+    background: #181818;
+}
+
+.subscribe-info .comment-write input:focus {
+    outline: none;
+}
+
+.subscribe-info .comment-button {
+    display: flex;
+    justify-content: right;
+    margin: 20px 0;
+    /* margin-right: 16px; */
+}
+
+.subscribe-info .comment-button button {
+    width: 80px;
+    height: 40px;
+}
+
+.subscribe-info .comment-button .yes-bt {
+    background: #303030;
+    border-radius: 2px;
+}
+
+.other-profile {
+    display: flex;
+}
+
+.other-people-profile img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.other-profile .name-tag {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.other-profile .name-tag .time {
+    color: #AAAAAA;
+}
+
+.other-commnet {
+    margin: 4px 0;
+}
+
+.mobile-next-video {
+    display: none;
+}
+
+.other-icon {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 40px 0;
+}
+
+.other-icon .thumbs-up {
+    display: flex;
+    margin-right: 24px;
+}
+
+.other-icon .up {
+    margin-right: 10px;
+}
+
+.other-icon .up-count {
+    color: #AAAAAA;
+}
+
+.other-icon .down {
+    margin-right: 24px;
+}
+
+.other-icon .recommnet {
+    color: #AAAAAA;
+}
+
+/* NEXT_VIDEO */
+
+.next-video {
+    max-width: 402px;
+    margin-top: 24px;
+}
+
+.next-video .next {
+    display: flex;
+    font-size: 14px;
+}
+
+.next-video .next-meta {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #AAAAAA;
+}
+
+.next-video .next-meta .name {
+    margin: 4px 0;
+}
+
+.next-video .next-meta .new-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF1A;
+    width: 60px;
+    height: 20px;
+    margin-top: 4px;
+    border-radius: 2px;
+}
+
+.next-video img {
+    max-width: 168px;
+}
+
+
+@media screen and (max-width: 1000px) { 
+
+    header .search input {
+        width: 14vw;                 
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .videoandinfo {
+        width: 100%;
+        padding: 20px 20px 0 20px;
+    }
+
+    main video {   
+        margin: 0;
+    }
+
+    main .video-info .title-meta {
+        padding: 20px 20px;
+        border-bottom: 1px solid rgb(56, 56, 56);
+    }
+
+    .subscribe-info .profile-meta {    
+        padding: 20px 20px;
+    }
+
+    .mobile-next-video {
+        display: block;
+        max-width: 100%;
+        margin: 24px 20px 0 20px;
+    }
+
+    .mobile-next-video .next-video {
+        max-width: 100%;
+        margin-top: 24px;
+    }
+
+    .next-video2 {
+        display: none;
+    }
+    
+    .next-video .next {
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 640px) { 
+
+    header .search {
+        display: none;
+    }
+    .header-right .search-icon2 {
+        display: block;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c8d1f1f4b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>youtube clone</title>
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <i class="fas fa-bars"></i>
+            <i class="fab fa-youtube"></i>
+            <span>Premium<sup>KR</sup></span>
+        </div>
+    <!-- HEADER - center -->
+        <div class="search">
+            <div class="search-box">
+                <input type="search"  placeholder="검색" >
+                <button class="keyboard"><i class="fas fa-keyboard"></i></button>
+            </div>
+            <button class="search-icon"><i class="fas fa-search"></i></button>
+            <button class="microphone"><i class="fas fa-microphone"></i></button>
+        </div>
+    <!-- HEADER - right -->
+        <div class="header-right">
+            <div class="search-icon2"><i class="fas fa-search"></i></div>
+            <div class="icon"><i class="fas fa-video"></i></div>
+            <div class="icon"><i class="fas fa-th"></i></div>
+            <div class="icon"><i class="far fa-bell"></i></div>
+            <div class="myprofile icon">
+                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="기본이미지">
+            </div>
+        </div>
+
+    </header>
+
+<!-- MAIN -->
+    <main>
+        <!-- MAIN -video -->
+        <div class="videoandinfo">
+            <video src="" controls autoplay></video>            
+        <!-- MAIN -info -->
+            <div class="video-info">
+                <div class="title-meta">
+                    <span class="title">
+                        클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+                    </span>
+                    <div class="video-meta">
+                        <span class="views">
+                            조회수 1,301회 2020.3.14
+                        </span>
+                        <div class="like">
+                            <button ><i class="far fa-thumbs-up active">1</i></button>
+                            <button ><i class="far fa-thumbs-down active">1</i></button>
+                            <button ><i class="fas fa-share">공유</i></button>
+                            <button ><i class="fas fa-file-download">저장</i></button>
+                            <button ><i class="fas fa-ellipsis-h"></i></button>
+                            <div class="like-bar"></div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="subscribe-info">
+                    <div class="profile-meta">
+                        <div class="profile-container">
+                            <div class="profile">
+                                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="name">드림코딩 by 엘리</div>
+                                <div class="people">구독자 10.7만명</div>
+                            </div>
+                        </div>
+
+                        <div class="subscribe">
+                            <button class="subBtn">subscribe</button>
+                            <i class="far fa-bell"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- 더보기 기능 -->
+                    <div class="comment">
+                        <div class="infoTitle clamp">유튜브 사이트를 반응형으로 만들어 볼꺼예요. 순수 HTML, CSS를 이용해서 (Javascript 약간) 만들어 보고, 다음에 Javascript를 배우면 동적으로 서버에서 데이터를 가져오는 연습을 더 해보도록 할께요. (↙ 자세한 내용) 
+                            <br><br>(죄송, 태그는 여기 정보란에 입력이 금지되어져있어요)
+                            <br>fab fa-youtube
+                            <br>fas fa-search
+                            <br>fas fa-ellipsis-v
+                            <br>fas fa-caret-down
+                            <br>fas fa-thumbs-up
+                            <br>fas fa-thumbs-down
+                            <br>fas fa-share
+                            <br>fas fa-plus
+                            <br>fab fa-font-awesome-flag</div>
+                        <button class="infoMore">더보기</button>
+                    </div>
+                    
+                    <!-- mobile-next-video -->
+                    <div class="mobile-next-video">
+                        <div class="next-video">
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                        
+                            <div class="next">
+                                <div class="next-img">
+                                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                                </div>
+                                <div class="next-meta">
+                                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                                    <span class="name">드림코딩 by 엘리</span>
+                                    <span class="views">조회수 13만회 1년 전</span>
+                                    <div class="new-video">새 동영상</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MAIN -comment -->
+                    <div class="my-comment">
+                        <div>
+                            댓글 562개
+                        </div>
+                        <div>
+                            <i class="fas fa-sort-amount-up"></i>
+                            <span>정렬 기준</span>
+                        </div>
+                    </div>
+
+                    <div class="comment-write">
+                        <div class="my-profile">
+                            <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                        </div>
+                        <div class="comment-input">
+                            <input type="text" placeholder="공개 댓글 추가...">
+                        </div>
+                    </div>
+                    <div class="comment-button">
+                        <button>취소</button>
+                        <button class="yes-bt">댓글</button>
+                    </div>
+                    
+        <!-- MAIN -comment2 -->
+                    <div class="other-comment">
+                        <div class="other-profile">
+                            <div class="other-people-profile">
+                                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="name-tag">
+                                    <span class="name">fail</span>
+                                    <span class="time">1개월 전</span>
+                                </div>
+                                <div class="other-commnet">쌤... 최고에요... 이런 선생님은 없었읍니다.ㄷㄷㄷ 그리고 영상길어지는거 절대 신경쓰지 마셔유ㅜㅜ 긴거 더좋아합니다. 배울땐 TMI가 좋아요ㅜㅜ 다들  저랑 같을겁니당</div>
+                                <div class="other-icon">
+                                    <div class="thumbs-up">
+                                        <button class="up"><i class="far fa-thumbs-up"></i></button>
+                                        <div class="up-count">364</div>
+                                    </div>
+                                    <button class="down"><i class="far fa-thumbs-down"></i></button>
+                                    <button class="recommnet">답글</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="other-comment">
+                        <div class="other-profile">
+                            <div class="other-people-profile">
+                                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="name-tag">
+                                    <span class="name">냐옹</span>
+                                    <span class="time">1개월 전</span>
+                                </div>
+                                <div class="other-commnet">화이트 계열 색상은 이제 가전제품쪽에선 빠질수 없는 색상이지.. 디자인 트랜드까지 파악한 승우아빠 그는 대체..</div>
+                                <div class="other-icon">
+                                    <div class="thumbs-up">
+                                        <button class="up"><i class="far fa-thumbs-up"></i></button>
+                                        <div class="up-count">364</div>
+                                    </div>
+                                    <button class="down"><i class="far fa-thumbs-down"></i></button>
+                                    <button class="recommnet">답글</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="other-comment">
+                        <div class="other-profile">
+                            <div class="other-people-profile">
+                                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="name-tag">
+                                    <span class="name">임한영</span>
+                                    <span class="time">3개월 전</span>
+                                </div>
+                                <div class="other-commnet">오와…진짜 강의 흐름이 체계적이고 최종흐름이 기본기를 튼튼히 다지는 웹개발자 되도록 이끌어주는 커리큘럼이라고 느낍니다 역시 믿고 듣는 엘리언니🦊💙
+                                </div>
+                                <div class="other-icon">
+                                    <div class="thumbs-up">
+                                        <button class="up"><i class="far fa-thumbs-up"></i></button>
+                                        <div class="up-count">364</div>
+                                    </div>
+                                    <button class="down"><i class="far fa-thumbs-down"></i></button>
+                                    <button class="recommnet">답글</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="other-comment">
+                        <div class="other-profile">
+                            <div class="other-people-profile">
+                                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="name-tag">
+                                    <span class="name">랄라블라</span>
+                                    <span class="time">4개월 전</span>
+                                </div>
+                                <div class="other-commnet">처음 힌트만 보고 혼자 만들어 볼려고 4시간 고통 받다가 강의보니 확실히 도움이 되네요! 앞으로 3번 정도만 다시해보면 완전히 제 것으로 만들 수 있을거 같아요
+                                </div>
+                                <div class="other-icon">
+                                    <div class="thumbs-up">
+                                        <button class="up"><i class="far fa-thumbs-up"></i></button>
+                                        <div class="up-count">364</div>
+                                    </div>
+                                    <button class="down"><i class="far fa-thumbs-down"></i></button>
+                                    <button class="recommnet">답글</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="other-comment">
+                        <div class="other-profile">
+                            <div class="other-people-profile">
+                                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="name-tag">
+                                    <span class="name">DML</span>
+                                    <span class="time">4개월 전</span>
+                                </div>
+                                <div class="other-commnet">홀홀  많은 걸 배울 수 있어서 너무 좋아요!! 진짜 최고ㅜㅜ 감사합니다!!</div>
+                                <div class="other-icon">
+                                    <div class="thumbs-up">
+                                        <button class="up"><i class="far fa-thumbs-up"></i></button>
+                                        <div class="up-count">364</div>
+                                    </div>
+                                    <button class="down"><i class="far fa-thumbs-down"></i></button>
+                                    <button class="recommnet">답글</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="other-comment">
+                        <div class="other-profile">
+                            <div class="other-people-profile">
+                                <img src="./011ee82200cbf4f301c382e19f44b28e.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="name-tag">
+                                    <span class="name">모르는 사람</span>
+                                    <span class="time">1개월 전</span>
+                                </div>
+                                <div class="other-commnet">쌤... 최고에요... 이런 선생님은 없었읍니다.ㄷㄷㄷ 그리고 영상길어지는거 절대 신경쓰지 마셔유ㅜㅜ 긴거 더좋아합니다. 배울땐 TMI가 좋아요ㅜㅜ 다들  저랑 같을겁니당</div>
+                                <div class="other-icon">
+                                    <div class="thumbs-up">
+                                        <button class="up"><i class="far fa-thumbs-up"></i></button>
+                                        <div class="up-count">364</div>
+                                    </div>
+                                    <button class="down"><i class="far fa-thumbs-down"></i></button>
+                                    <button class="recommnet">답글</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="next-video next-video2">
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+            
+            <div class="next">
+                <div class="next-img">
+                    <img src="./f5973a3d40c84f168f20ce1b5edffe8d.jpg" alt="">
+                </div>
+                <div class="next-meta">
+                    <span class="title">웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+                    <span class="name">드림코딩 by 엘리</span>
+                    <span class="views">조회수 13만회 1년 전</span>
+                    <div class="new-video">새 동영상</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
