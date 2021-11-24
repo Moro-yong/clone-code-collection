@@ -1,1 +1,1 @@
-# clone-code-collection
+# fornt 연습 진행 및 결과물 저장 공간입니다.
